@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+:root {
+	font-size: 15px;
+	--paragraph-color: hsla(0, 0%, 100%, 0.75);
+	--util-color: hsl(0, 0%, 95%);
+}
+.card--sedans {
+	--b-c: hsl(31, 77%, 52%);
+}
+.card--suv {
+	--b-c: hsl(184, 100%, 22%);
+}
+.card--luxury {
+	--b-c: hsl(179, 100%, 13%);
+}
+
+main {
+	font-family: "Lexend Deca", sans-serif;
+}
+
+.card--flex {
+	display: flex;
+	justify-content: stretch;
+	flex: 1 1 50px;
+}
+
+.card--sedans,
+.card--suv,
+.card--luxury {
+	background-color: var(--b-c);
+	padding: 2rem;
+}
+
+.card__title {
+	color: var(--util-color);
+	font-size: 1.5rem;
+	font-family: "Big Shoulders Display", cursive;
+	margin: 1rem 0;
+}
+
+.card__info {
+	color: var(--paragraph-color);
+	font-size: 1rem;
+	margin: 2rem 0;
+}
+
+.card__action {
+	padding: 0.5rem 1.5rem;
+	border: 2px solid transparent;
+	border-radius: 1rem;
+	transition: all 200ms linear;
+}
+
+.card--sedans button,
+.card--suv button,
+.card--luxury button {
+	color: var(--b-c);
+	cursor: pointer;
+}
+.card--sedans button:hover,
+.card--suv button:hover,
+.card--luxury button:hover {
+	color: var(--util-color);
+	background-color: var(--b-c);
+	border-color: var(--util-color);
+}
