@@ -1,0 +1,22 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "CRUD app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifeoluwah21/Assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifeoluwah21/Assignment/issues"
+  },
+  "homepage": "https://github.com/ifeoluwah21/Assignment#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
